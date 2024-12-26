@@ -1,11 +1,17 @@
-<p>paragraph</p>
+<h1>PotterGuessr</h1>
+
+<p>Yes, you can easily cheat with inspect element.</p>
+<p>This entire page is held together by duct tape because that's all the effort you're getting for a dumb joke.</p>
 
 <body id="body">
-    <script>
-        var img = document.createElement('img');
-        img.src = 'images/frame1-'+(256*Math.floor(1+856*Math.random()))+'.jpg';
-        document.getElementById('body').appendChild(img);
-    </script>
-</body>
+    <img id="frame"></img>
+    <br>
+    <input id="slider" type="range" step="1" style="width: 1000px">
+    <div id="slider-output">Sorceror's Stone, 0:00</div>
+    <button onclick="guess()">Guess!</button>
+    <button onclick="newFrame()">New frame</button>
+    <div id="results">Guess to receive a score.</div>
 
-<p>another</p>
+    <script src="script.js"></script>
+
+</body>
