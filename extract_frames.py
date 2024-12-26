@@ -1,6 +1,6 @@
 import cv2
 
-DECIMATION = 256
+DECIMATION = 128
 MOVIE_NUMBER = 1
 
 path = f"hp{MOVIE_NUMBER}.mp4"

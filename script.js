@@ -1,5 +1,5 @@
 movie_names = ['zero index',
-               'Sorceror\'s Stone',
+               'Sorcerer\'s Stone',
                'Chamber of Secrets',
                'Prisoner of Azkaban',
                'Goblet of Fire',
@@ -8,8 +8,8 @@ movie_names = ['zero index',
                'Deathly Hallows Part 1',
                'Deathly Hallows Part 2']
 
-decimation = 256
-movie_lengths = [0,856,0,0,0,0,0,0,0]
+decimation = 128
+movie_lengths = [0,1712,0,0,0,0,0,0,0]
 runtime_mins = []
 movie_lengths.forEach((element) => runtime_mins.push(Math.floor(element*decimation/24/60)+1))
 guessed_state = false
