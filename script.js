@@ -45,13 +45,13 @@ function getFrame() {
 
     movie_frame = global_frame-sum(movie_lengths.slice(0,movie_number))
 
-    document.getElementById('frame').src = 'images/frame'+movie_number+'-'+(256*(1+movie_frame))+'.jpg'
+    document.getElementById('frame').src = 'images/frame'+movie_number+'-'+(decimation*(1+movie_frame))+'.jpg'
     return [movie_number,movie_frame]
 }
 
 function guess() {
     if(guessed_state) return
-    //guessed_state = true
+    guessed_state = true
     slider = document.getElementById('slider')
     results = document.getElementById('results')
     goal_value = sum(runtime_mins.slice(0,frame_data[0]))+Math.floor(frame_data[1]*decimation/24/60)
